@@ -13,7 +13,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    margin: 0 1rem; /* Adjust the spacing as needed */
+    margin: 0 5rem; /* Adjust the spacing as needed */
 }
 
 /* Header Styles */
@@ -131,4 +131,95 @@ body {
     to {
         opacity: 1;
     }
+}
+
+/* Ensure no padding or margin on body and html */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark grey text color */
+}
+
+/* Navbar styling */
+.navbar {
+    border: 1px solid black;
+    padding: 0;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+    border-radius: 0; /* Remove border radius */
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-toggler {
+    border-color: black;
+}
+
+.navbar-toggler-icon {
+    background-color: black;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 3rem 0; /* Padding top and bottom */
+    background-color: #ffffff; /* White background */
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h6 {
+    color: #d9534f; /* Red headers */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.main-content .about-image {
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem; /* Bottom margin for image */
+}
+
+/* Button styling */
+.btn {
+    border-radius: 25px; /* Rounded button corners */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #d9534f; /* Red background for primary button */
+    border-color: #d9534f; /* Red border for primary button */
+}
+
+.btn-primary:hover {
+    background-color: #c9302c; /* Darker red on hover */
+    border-color: #ac2925; /* Darker red border on hover */
+}
+
+.btn-secondary {
+    background-color: #333; /* Black background for secondary button */
+    border-color: #333; /* Black border for secondary button */
+}
+
+.btn-secondary:hover {
+    background-color: #555; /* Darker black on hover */
+    border-color: #555; /* Darker black border on hover */
 }
