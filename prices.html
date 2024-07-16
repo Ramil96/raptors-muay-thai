@@ -10,6 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d21ac6cbde.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional CSS styles as needed */
+        .jump-to-prices {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80%; /* Adjust top positioning as needed */
+            z-index: 1000; /* Ensure a high z-index to keep it above other elements */
+        }
+    </style>
 </head>
 
 <body>
@@ -64,8 +74,9 @@
     </header>
 
     <main>
+        <a href="#prices-section" class="btn btn-primary jump-to-prices">Jump to Prices</a>
         <img src="assets/images/prices.jpg" class="img-fluid w-100 fade-in" alt="Prices Banner">
-        <div class="container my-5 text-center">
+        <div id="prices-section" class="container my-5 text-center">
             <h2>PRICES</h2>
             <h5>- No joining fee -</h5>
             <p>Join Raptors and choose from a range of plans that suits you best</p>
