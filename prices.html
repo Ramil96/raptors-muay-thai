@@ -11,13 +11,46 @@
     <script src="https://kit.fontawesome.com/d21ac6cbde.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        /* Additional CSS styles as needed */
+        /* Ensure no padding or margin on body and html */
+        body, html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            border: 1px solid black;
+            padding: 0;
+            background-color: #ffffff;
+            width: 100%;
+            margin: 0;
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+        }
+
+        .navbar-toggler {
+            border-color: black;
+        }
+
+        .navbar-toggler-icon {
+            background-color: black;
+        }
+
+        /* Ensure container-fluid and its children have no padding */
+        .container-fluid, .row.no-gutters {
+            padding: 0;
+            margin: 0;
+        }
+
         .jump-to-prices {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: 80%; /* Adjust top positioning as needed */
-            z-index: 1000; /* Ensure a high z-index to keep it above other elements */
+            top: 80%;
+            z-index: 1000;
         }
     </style>
 </head>

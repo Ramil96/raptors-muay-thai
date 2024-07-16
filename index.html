@@ -16,6 +16,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -34,7 +35,8 @@
             color: white;
             text-align: left;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            opacity: 0; /* Start invisible */
+            opacity: 0;
+            /* Start invisible */
             animation: fadeInUp 2s ease-in-out forwards;
         }
 
@@ -52,9 +54,58 @@
 
         /* Dimming effect */
         #hero-image {
-            filter: brightness(70%); /* Adjust the brightness level as needed */
+            filter: brightness(70%);
+            /* Adjust the brightness level as needed */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            border: 1px solid black;
+            padding: 0;
+            /* Remove default padding */
+            background-color: #ffffff;
+            /* White background */
+            width: 100%;
+            /* Make navbar span the full width */
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+            /* Black text color for links */
+        }
+
+        .navbar-toggler {
+            border-color: black;
+            /* Black border color for toggler */
+        }
+
+        .navbar-toggler-icon {
+            background-color: black;
+            /* Black background for toggler icon */
+        }
+
+        /* Ensure no padding or margin on body and html */
+        body, html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        /* Ensure container-fluid and its children have no padding */
+        .container-fluid, .row.no-gutters {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Adjust phone enquiry alignment */
+        .phone-enquiry {
+            margin-top: 1rem;
+            /* Adjust margin for spacing */
         }
     </style>
+
 </head>
 
 <body>
@@ -123,12 +174,12 @@
                 <div class="col-md-6">
                     <h5><em>The Sport</em></h5>
                     <h2>Muay Thai</h2>
-                    <p>Muay Thai, known as the "Art of Eight Limbs," is a traditional martial art from Thailand utilizing punches, kicks, elbows, and knee strikes. 
-                       Originating as "Muay Boran" centuries ago, it served as a combat technique for Siamese soldiers. 
-                       Evolving into a regulated sport in the early 20th century, it features the ceremonial "Wai Kru Ram Muay" dance to honor teachers and ancestors. 
-                       Training includes shadow boxing, pad work, bag work, sparring, and conditioning, making it a rigorous full-body workout. 
-                       Globally popular for its effectiveness in fitness and MMA, Muay Thai offers both physical and mental benefits, 
-                       attracting practitioners of all levels. Join us to experience this ancient and respected martial art.</p>
+                    <p>Muay Thai, known as the "Art of Eight Limbs," is a traditional martial art from Thailand utilizing punches, kicks, elbows, and knee strikes.
+                        Originating as "Muay Boran" centuries ago, it served as a combat technique for Siamese soldiers.
+                        Evolving into a regulated sport in the early 20th century, it features the ceremonial "Wai Kru Ram Muay" dance to honor teachers and ancestors.
+                        Training includes shadow boxing, pad work, bag work, sparring, and conditioning, making it a rigorous full-body workout.
+                        Globally popular for its effectiveness in fitness and MMA, Muay Thai offers both physical and mental benefits,
+                        attracting practitioners of all levels. Join us to experience this ancient and respected martial art.</p>
                     <button class="btn btn-primary">About us</button>
                 </div>
                 <div class="col-md-6">

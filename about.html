@@ -10,6 +10,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d21ac6cbde.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Ensure no padding or margin on body and html */
+        body, html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            border: 1px solid black;
+            padding: 0;
+            /* Remove default padding */
+            background-color: #ffffff;
+            /* White background */
+            width: 100%;
+            /* Make navbar span the full width */
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+            /* Black text color for links */
+        }
+
+        .navbar-toggler {
+            border-color: black;
+            /* Black border color for toggler */
+        }
+
+        .navbar-toggler-icon {
+            background-color: black;
+            /* Black background for toggler icon */
+        }
+
+        /* Ensure container-fluid and its children have no padding */
+        .container-fluid, .row.no-gutters {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -168,4 +210,3 @@
 </body>
 
 </html>
-
