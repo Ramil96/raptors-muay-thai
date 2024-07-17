@@ -270,3 +270,7 @@ h6 {
     color:#d9534f;
     font-weight: bold;
 }
+
+#footer-href {
+    text-decoration: none;
+}
