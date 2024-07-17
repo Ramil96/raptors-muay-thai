@@ -274,3 +274,9 @@ h6 {
 #footer-href {
     text-decoration: none;
 }
+
+#location-href {
+    text-decoration: none;
+}
+
+a { color: inherit; } /* hide link color */
