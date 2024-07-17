@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raptors Muay Thai</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4JQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d21ac6cbde.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -50,15 +50,18 @@
 
         .main-content {
             position: relative;
-            padding: 0; /* Ensure no padding */
+            padding: 0;
+            /* Ensure no padding */
         }
 
         /* Dimming effect */
         #hero-image {
             filter: brightness(70%);
             /* Adjust the brightness level as needed */
-            margin: 0; /* Ensure no margin */
-            padding: 0; /* Ensure no padding */
+            margin: 0;
+            /* Ensure no margin */
+            padding: 0;
+            /* Ensure no padding */
         }
 
         /* Navbar styling */
@@ -121,31 +124,38 @@
 
 <body>
     <header>
+        <!-- Container for the header section -->
         <div class="container">
+            <!-- Flex container for header items -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+                <!-- Logo section -->
                 <a href="index.html" class="mb-3 mb-md-0">
                     <img class="img-fluid" src="assets/images/rmtlogo.png.PNG" alt="Raptors Muay Thai logo">
                 </a>
+                <!-- Location section -->
                 <div class="text-center mx-3">
                     <h3 id="location"><i class="fa-solid fa-location-dot"></i> Raptors Muay Thai</h3>
                     <p>Unit 6, Lower Court</p>
                     <p>Sutton, SM1 4QJ</p>
                 </div>
+                <!-- Phone enquiry section -->
                 <div class="phone-enquiry text-center mx-3">
                     <h3><i class="fa-solid fa-phone"></i> Phone Enquiry</h3>
                     <p>07963 019 867</p>
                 </div>
+                <!-- Social icons section -->
                 <div class="social-icons mx-3">
                     <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
+                <!-- Header buttons section -->
                 <div class="header-buttons mt-3 mt-md-0">
-                    <a href="contact-us.html" class="btn btn-primary mb-2 w-100">Get in touch</a>
-                    <!-- Modified timetable button to trigger modal -->
+                    <a href="contact-us.html#contact-form" class="btn btn-primary mb-2 w-100">Get in touch</a>
                     <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#timetableModal">Timetable</button>
                 </div>
             </div>
         </div>
+        <!-- Navbar section -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -170,7 +180,10 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main content section -->
     <div class="main-content">
+        <!-- Hero image and text section -->
         <div class="position-relative">
             <img id="hero-image" alt="Muay Thai technical spar in ring" src="assets/images/mthome.jpg" class="img-fluid w-100 fade-in">
             <div class="hero-text fade-in-up">
@@ -181,6 +194,7 @@
                 <p>grab your gear and lets go!</p>
             </div>
         </div>
+        <!-- About Muay Thai section -->
         <div class="container my-4">
             <div class="row">
                 <div class="col-md-6">
@@ -192,62 +206,58 @@
                 <div class="col-md-6">
                     <img src="assets/images/mt-bag.jpg" class="img-fluid rounded-image fade-in" alt="Muay Thai bag work">
                 </div>
-                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="custom-footer">
+        <div class="footer-overlay"></div>
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div id="raptor-logo" class="col-sm-3 text-center mb-4">
+                    <img src="assets/images/rmtlogo.png.PNG" alt="Raptors Muay Thai Logo" class="img-fluid Raptors Muay Thai Logo">
+                </div>
+                <div class="col-sm-3 text-center mb-4">
+                    <h6>CLASSES</h6>
+                    <p>Muay Thai</p>
+                    <p>Conditioning</p>
+                    <p>Fitness</p>
+                    <p>Kids classes</p>
+                </div>
+                <div class="col-sm-3 text-center mb-4">
+                    <h6>OPENING HOURS</h6>
+                    <p>Mon- Friday: 5:30-8:30pm</p>
+                    <p>Sat: 9:30am-12:pm</p>
+                    <p>Sun: Closed</p>
+                </div>
+                <div class="col-sm-3 text-center mb-4">
+                    <h6>GYM ADDRESS</h6>
+                    <p>Unit 6, Lower Court, 13 - 19 Lower Rd, Sutton SM1 4QJ</p>
+                </div>
+                <div class="col-sm-3 text-center mb-4">
+                    <h6>CONTACT US</h6>
+                    <p>Tel: 07963 019 867</p>
+                    <p>Email: raptorstrikeforce@hotmail.co.uk</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Timetable Modal -->
+    <div class="modal fade" id="timetableModal" tabindex="-1" aria-labelledby="timetableModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="timetableModalLabel">Timetable</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/images/raptorstt.png" class="img-fluid" alt="Timetable">
+                </div>
             </div>
         </div>
     </div>
 </body>
-<footer class="custom-footer">
-    <div class="footer-overlay"></div>
-    <div class="container-fluid py-5">
-        <div class="row">
-            <div id="raptor-logo" class="col-sm-3 text-center mb-4">
-                <img src="assets/images/rmtlogo.png.PNG" alt="Raptors Muay Thai Logo" class="img-fluid Raptors Muay Thai Logo">
-            </div>
-            <div class="col-sm-3 text-center mb-4">
-                <h6>CLASSES</h6>
-                <p>Muay Thai</p>
-                <p>Conditioning</p>
-                <p>Fitness</p>
-                <p>Kids classes</p>
-            </div>
-            <div class="col-sm-3 text-center mb-4">
-                <h6>OPENING HOURS</h6>
-                <p>Mon- Friday: 5:30-8:30pm</p>
-                <p>Sat: 9:30am-12:pm</p>
-                <p>Sun: Closed</p>
-            </div>
-            <div class="col-sm-3 text-center mb-4">
-                <h6>GYM ADDRESS</h6>
-                <p>Unit 6, Lower Court, 13 - 19 Lower Rd, Sutton SM1 4QJ</p>
-            </div>
-            <div class="col-sm-3 text-center mb-4">
-                <h6>CONTACT US</h6>
-                <p>Tel: 07963 019 867</p>
-                <p>Email: raptorstrikeforce@hotmail.co.uk</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Timetable Modal -->
-<div class="modal fade" id="timetableModal" tabindex="-1" aria-labelledby="timetableModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="timetableModalLabel">Timetable</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-            <img src="assets/images/raptorstt.png" class="img-fluid" alt="Timetable">
-        </div>
-    </div>
-</div>
-</div>
-</body>
 
 </html>
-
-
-</html>
-
