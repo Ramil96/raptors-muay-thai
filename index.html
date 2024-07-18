@@ -10,13 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d21ac6cbde.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
     <style>
+        /* Animation for fading in elements */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -27,6 +28,7 @@
             animation: fadeInUp 2s ease-in-out;
         }
 
+        /* Styling for hero text */
         .hero-text {
             position: absolute;
             top: 20%;
@@ -36,7 +38,6 @@
             text-align: left;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             opacity: 0;
-            /* Start invisible */
             animation: fadeInUp 2s ease-in-out forwards;
         }
 
@@ -48,61 +49,49 @@
             font-size: 1.2rem;
         }
 
+        /* Main content container */
         .main-content {
             position: relative;
             padding: 0;
-            /* Ensure no padding */
         }
 
-        /* Dimming effect */
+        /* Hero image dimming effect */
         #hero-image {
             filter: brightness(70%);
-            /* Adjust the brightness level as needed */
             margin: 0;
-            /* Ensure no margin */
             padding: 0;
-            /* Ensure no padding */
         }
 
         /* Navbar styling */
         .navbar {
             border: 1px solid black;
             padding: 0;
-            /* Remove default padding */
             background-color: #ffffff;
-            /* White background */
             width: 100%;
-            /* Make navbar span the full width */
             margin: 0;
-            /* Remove default margin */
         }
 
         .navbar-nav .nav-link {
             color: black;
-            /* Black text color for links */
         }
 
         .navbar-toggler {
             border-color: black;
-            /* Black border color for toggler */
         }
 
         .navbar-toggler-icon {
             background-color: black;
-            /* Black background for toggler icon */
         }
 
         /* Ensure no padding or margin on body and html */
-        body,
-        html {
+        body, html {
             padding: 0;
             margin: 0;
             width: 100%;
         }
 
         /* Ensure container-fluid and its children have no padding */
-        .container-fluid,
-        .row.no-gutters {
+        .container-fluid, .row.no-gutters {
             padding: 0;
             margin: 0;
         }
@@ -110,23 +99,19 @@
         /* Adjust phone enquiry alignment */
         .phone-enquiry {
             margin-top: 1rem;
-            /* Adjust margin for spacing */
         }
 
         /* Round edges of the Muay Thai bagwork image */
         .rounded-image {
             border-radius: 15px;
-            /* Adjust the value for the desired roundness */
         }
     </style>
-
 </head>
 
 <body>
     <header>
-        <!-- Container for the header section -->
+        <!-- Header section -->
         <div class="container">
-            <!-- Flex container for header items -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
                 <!-- Logo section -->
                 <a href="index.html" class="mb-3 mb-md-0">
@@ -134,7 +119,7 @@
                 </a>
                 <!-- Location section -->
                 <div class="text-center mx-3">
-                    <h3 id="location"><i class="fa-solid fa-location-dot"></i><a id="location-href" href="https://5500-ramil96-raptorsmuaythai-8pq3yqc5wxs.ws.codeinstitute-ide.net/contact-us.html#map"> Raptors Muay Thai</a></h3>
+                    <h3 id="location"><i class="fa-solid fa-location-dot"></i><a id="location-href" href="contact-us.html#map"> Raptors Muay Thai</a></h3>
                     <p>Unit 6, Lower Court</p>
                     <p>Sutton, SM1 4QJ</p>
                 </div>
@@ -156,6 +141,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Navbar section -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -182,31 +168,27 @@
         </nav>
     </header>
 
+    <!-- Main content section -->
     <div class="main-content">
-        <div class="main-content">
-            <!-- Hero image and text section -->
-            <div class="position-relative">
-                <img id="hero-image" alt="Muay Thai technical spar in ring" src="assets/images/mthome.jpg" class="img-fluid w-100 fade-in">
-                <div class="hero-overlay"></div>
-                <div class="hero-text fade-in-up">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 col-md-8 text-center text-lg-start">
-                                <h2 class="mb-4">Open mat sessions</h2>
-                                <h3 class="mb-4">Every Saturday 13:00 - 15:00</h3>
-                                <p class="mb-4">Every weekend we will be hosting an open mat on Saturday at 13:00.</p>
-                                <p class="mb-4">For all levels and lasts till 15:00. Non members welcome.</p>
-                                <p class="mb-4">Grab your gear and let's go!</p>
-                            </div>
+        <!-- Hero image and text section -->
+        <div class="position-relative">
+            <img id="hero-image" alt="Muay Thai technical spar in ring" src="assets/images/mthome.jpg" class="img-fluid w-100 fade-in">
+            <div class="hero-overlay"></div>
+            <div class="hero-text fade-in-up">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8 text-center text-lg-start">
+                            <h2 class="mb-4">Open mat sessions</h2>
+                            <h3 class="mb-4">Every Saturday 13:00 - 15:00</h3>
+                            <p class="mb-4">Every weekend we will be hosting an open mat on Saturday at 13:00.</p>
+                            <p class="mb-4">For all levels and lasts till 15:00. Non members welcome.</p>
+                            <p class="mb-4">Grab your gear and let's go!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    
-    
-    
+
         <!-- About Muay Thai section -->
         <div class="container my-4">
             <div class="row">
@@ -228,15 +210,17 @@
         <div class="footer-overlay"></div>
         <div class="container-fluid py-5">
             <div class="row">
-                    <div>
-                    <div id="raptor-logo" class="col-sm-3 text-center mb-4">
-                        <a href="index.html">
+                <div>
+                <div id="raptor-logo" class="col-sm-3 text-center mb-4">
+                    <a href="index.html">
                         <img src="assets/images/rmtlogo.png.PNG" alt="Raptors Muay Thai Logo" class="img-fluid">
-                        </a>
-                    </div>
-                    </div>
+                    </a>
+                </div>    
+                </div>
                 <div class="col-sm-3 text-center mb-4">
-                    <a id="footer-href" href="https://5500-ramil96-raptorsmuaythai-8pq3yqc5wxs.ws.codeinstitute-ide.net/about.html#classes-link"><h6>CLASSES</h6></a>
+                    <a id="footer-href" href="about.html#classes-link">
+                        <h6>CLASSES</h6>
+                    </a>
                     <p>Muay Thai</p>
                     <p>Conditioning</p>
                     <p>Fitness</p>
@@ -249,21 +233,21 @@
                     <p>Sun: Closed</p>
                 </div>
                 <div class="col-sm-3 text-center mb-4">
-                    <a id="location-href" href="https://5500-ramil96-raptorsmuaythai-8pq3yqc5wxs.ws.codeinstitute-ide.net/contact-us.html#map"><h6>GYM ADDRESS</h6></a>
+                    <a id="location-href" href="contact-us.html#map">
+                        <h6>GYM ADDRESS</h6>
+                    </a>
                     <p>Unit 6, Lower Court, 13 - 19 Lower Rd, Sutton SM1 4QJ</p>
                 </div>
                 <div class="col-sm-3 text-center mb-4">
-                    <a id="footer-href" href="contact-us.html#contact-form"><h6>CONTACT US</h6></a>
+                    <a id="footer-href" href="contact-us.html#contact-form">
+                        <h6>CONTACT US</h6>
+                    </a>
                     <p>Tel: 07963 019 867</p>
                     <p>Email: raptorstrikeforce@hotmail.co.uk</p>
                 </div>
             </div>
         </div>
     </footer>
-
-</body>
-
-</html>
 
     <!-- Timetable Modal -->
     <div class="modal fade" id="timetableModal" tabindex="-1" aria-labelledby="timetableModalLabel" aria-hidden="true">
