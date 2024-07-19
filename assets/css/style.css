@@ -210,8 +210,8 @@ html {
 }
 
 .btn-primary:hover {
-    background-color: #c9302c; /* Darker red on hover */
-    border-color: #ac2925; /* Darker red border on hover */
+    background-color: black; /* Darker red on hover */
+    border-color: black; /* Darker red border on hover */
 }
 
 .btn-secondary {
