@@ -39,14 +39,19 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             opacity: 0;
             animation: fadeInUp 2s ease-in-out forwards;
+            width: 80%;
+        }
+
+        .hero-text h2 {
+            font-size: calc(2rem + 1vw);
         }
 
         .hero-text h3 {
-            font-size: 2.5rem;
+            font-size: calc(1.5rem + 1vw);
         }
 
         .hero-text p {
-            font-size: 1.2rem;
+            font-size: calc(1rem + 0.5vw);
         }
 
         /* Main content container */
@@ -105,6 +110,7 @@
         .rounded-image {
             border-radius: 15px;
         }
+        
     </style>
 </head>
 
@@ -168,26 +174,51 @@
         </nav>
     </header>
 
-    <!-- Main content section -->
-    <div class="main-content">
-        <!-- Hero image and text section -->
-        <div class="position-relative">
-            <img id="hero-image" alt="Muay Thai technical spar in ring" src="assets/images/mthome.jpg" class="img-fluid w-100 fade-in">
-            <div class="hero-overlay"></div>
-            <div class="hero-text fade-in-up">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-md-8 text-center text-lg-start">
-                            <h2 class="mb-4">Open mat sessions</h2>
-                            <h3 class="mb-4">Every Saturday 13:00 - 15:00</h3>
-                            <p class="mb-4">Every weekend we will be hosting an open mat on Saturday at 13:00.</p>
-                            <p class="mb-4">For all levels and lasts till 15:00. Non members welcome.</p>
-                            <p class="mb-4">Grab your gear and let's go!</p>
+    <main>
+        <!-- Main content section -->
+        <div class="main-content">
+            <!-- Hero image and text section -->
+            <div class="position-relative">
+                <img id="hero-image" alt="Muay Thai technical spar in ring" src="assets/images/mthome.jpg" class="img-fluid w-100 fade-in">
+                <div class="hero-overlay"></div>
+                <div class="hero-text fade-in-up">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8 text-center text-lg-start">
+                                <h2 class="mb-4 display-4 display-md-3 display-sm-4">Open mat sessions</h2>
+                                <h3 class="mb-4 display-6 display-md-5 display-sm-6">Every Saturday 13:00 - 15:00</h3>
+                                <p class="mb-4 lead lead-md">Every weekend we host an open mat on Saturday at 13:00. Grab your gear and lets go!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <style>
+            @media (max-width: 768px) {
+                .hero-text h2 {
+                    font-size: 1.75rem;
+                }
+                .hero-text h3 {
+                    font-size: 1.5rem;
+                }
+                .hero-text p {
+                    font-size: 1rem;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                .hero-text h2 {
+                    font-size: 1.5rem;
+                }
+                .hero-text h3 {
+                    font-size: 1.25rem;
+                }
+                .hero-text p {
+                    font-size: 0.875rem;
+                }
+            }
+            </style>
 
         <!-- About Muay Thai section -->
         <div class="container my-4">
