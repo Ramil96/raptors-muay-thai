@@ -24,16 +24,21 @@
 
         /* Navbar styling */
         .navbar {
-            border: 1px solid black;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #A4161A; /* Set navbar background color to red */
             width: 100%;
-            margin: 0;
-            border-radius: 0;
+            margin: 0; /* Remove any margin */
+            border-radius: 0; /* Remove border radius */
         }
 
         .navbar-nav .nav-link {
-            color: black;
+            color: white; /* Set text color to white for better readability */
+        }
+
+        /* Remove any extra padding/margin on the navbar container */
+        .navbar .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .navbar-toggler {
@@ -135,7 +140,8 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <!-- Navbar section -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
