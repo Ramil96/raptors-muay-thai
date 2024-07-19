@@ -271,11 +271,11 @@ h6 {
     font-weight: bold;
 }
 
-#footer-href {
+.footer-href {
     text-decoration: none;
 }
 
-#location-href {
+.location-href {
     text-decoration: none;
 }
 
