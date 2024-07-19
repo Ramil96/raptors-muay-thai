@@ -172,8 +172,11 @@ html {
     background-color: #ffffff; /* White background */
 }
 
+.main-content h2 {
+    color: #d9534f;
+}
+
 .main-content h1,
-.main-content h2,
 .main-content h6 {
     color: #A4161A; /* Red headers */
     font-weight: bold;
