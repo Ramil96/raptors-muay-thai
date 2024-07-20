@@ -97,3 +97,33 @@ To determine the best approach to this project, I began by identifying and under
 
 ![Home page wireframe](assets/images/wireframes/Wireframe%20index.PNG)
 > The design flow of this website is meant to showcase a minimal design showing necessary information which is in the header.
+
+## Surface Plane
+
+### Color
+
+> I decided that the best approach to this website was a structured yet minimalistic design to bring light to the most important information at the top by the header to influence direct access and information regarding location and contact information about the gym which would lead customers and website users to easilly access the website and information. To highlight this information and make the UX better I would need to stick to 3 main colors as the website prior to my creation had very hard to differentiate from background to information so instead of using dark colours I used bright colors which would contrast well with backgrounds I would be using.
+
+> The decision I took in terms of which colors were to be used were
+> - #A4161A - Blood red
+> - #fff - White
+> - #000 - Black
+
+
+>Additional color usage was used at the bottom of the pages as the footer needed a stronger and brighter color to be able to see properly the sub headings for the items in the footer which are also clickable links so here i dimmed out the background and made the sub text even brighter for the user to see, additional color would come from images used across the website but the main color principle are the 3 most commonly used as suggested above.
+
+### Typography 
+> The font's chosen for this project were 
+- Roboto
+- Sans serrif
+
+> The reason I used these two fonts were to keep the text simple and easy to read with no distractions. I wanted to make sure that I was able to assist users with visual impairments with the choice of font.
+
+## Features
+
+### index.html
+
+#### Header Navigation Features
+
+![Header Navigation Features](assets/images/features/header%20navigation%20features.PNG)
+> Navigation Bar and header developed using bootstrap container fluid class. The header has many navigational features including the navigation bar. The logo brings access back to the home page on any page, the address is a clickable naviation and the social icons are displayed ontop for quick and easy access to social sites also the two buttons "get in touch" and "timetable" are working throughtout the entire site.
