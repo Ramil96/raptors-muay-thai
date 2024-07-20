@@ -33,3 +33,8 @@ I looked at the existing website of Raptors Muay Thai and started to decide weth
 ### Strategy Plane
 ---
 To determine the best approach to this project, I began by identifying and understanding both user and business needs. By focusing on these needs, I could ensure that the website would be functional, user-friendly, and aligned with Raptors Muay Thai's goals.
+
+## User Stories
+### User
+> As a user I want to be able to find a Muay Thai Gym in my local area to improve my fitness.
+> As a user I want to be able to be able to know the prices of different memebership options.
