@@ -56,6 +56,10 @@
         .rounded-image {
             border-radius: 15px;
         }
+
+        .alert-success {
+            display: none;
+        }
     </style>
 </head>
 
@@ -157,30 +161,33 @@
                 </div>
                 <div id="contact-form" class="col-12 mt-4">
                     <h2>Contact Us</h2>
-                    <form>
+                    <div id="successMessage" class="alert alert-success" role="alert">
+                        Your message has been sent successfully!
+                    </div>
+                    <form id="contactForm">
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
                         </div>
                         <div class="d-flex justify-content-end">
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -258,6 +265,17 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Show the success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Clear the form fields
+            document.getElementById('contactForm').reset();
+        });
+    </script>
 </body>
 
 </html>
