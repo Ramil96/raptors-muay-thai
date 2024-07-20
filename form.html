@@ -38,6 +38,10 @@
         .btn-register {
             width: 100%;
         }
+
+        .alert-success {
+            display: none;
+        }
     </style>
 </head>
 
@@ -45,6 +49,9 @@
 
     <div class="container">
         <h2 class="text-center mb-4">Register</h2>
+        <div id="successMessage" class="alert alert-success" role="alert">
+            Registration successful!
+        </div>
         <form id="registerForm">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
@@ -59,13 +66,23 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="terms">
+                <input type="checkbox" class="form-check-input" id="terms" required>
                 <label class="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a></label>
             </div>
             <button type="submit" class="btn btn-primary btn-register">Register</button>
         </form>
     </div>
-    
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            
+            // You can add any validation or AJAX request here before showing the success message
+
+            document.getElementById('successMessage').style.display = 'block'; // Show the success message
+        });
+    </script>
+
 </body>
 
 </html>
