@@ -293,6 +293,8 @@ To determine the best approach to this project, I began by identifying and under
 
 > Footer image showing on top of screen. Fixed
 
+> About page location and prices header brings user to "no webpage found" error when clicking the location in header. Fixed
+
 ## Deployment
 > To deploy the project I followed these steps from the main project repository [here](https://github.com/Ramil96/raptors-muay-thai)
 
