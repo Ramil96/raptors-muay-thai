@@ -283,15 +283,15 @@ To determine the best approach to this project, I began by identifying and under
 
 ## Bugs
 
-> Hero image text not responsive. Fixed
+> Hero image text not responsive. Fixed - Added bootstrap sm -lg to resize ratio when scaled down in size using indentation to fix the element in desired place.
 
-> Issues with navigation links on about us page. Fixed
+> Issues with navigation links on about us page. Fixed - Reconnected the href as when copying over the style from index to other pages the href and link was missing.
 
-> Issues with contact us button only going to contact page and not selected div. Fixed
+> Issues with contact us button only going to contact page and not selected div. Fixed - Re linked the href due to switching styles and information being deleted due to manual error.
 
-> Navbar displaying white space on both sides and not filling the whole width of element. Fixed
+> Navbar displaying white space on both sides and not filling the whole width of element. Fixed - Scaled full width of the color by using CSS 100% width to fill the whole navbar.
 
-> Footer image showing on top of screen. Fixed
+> Footer image showing on top of screen. Fixed - Adjusted the image using bootstrap comman image fluid and not fixed as fixed was pushing the footer image to the top of the page.
 
 > About page location and prices header brings user to "no webpage found" error when clicking the location in header. Fixed
 
