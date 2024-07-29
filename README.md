@@ -60,7 +60,7 @@ To determine the best approach to this project, I began by identifying and under
 
 > The website should neatly and appropriately list the services we provide, such as Muay Thai classes for adults and children, conditioning sessions, and fitness programs.
 
-> The website should give users proof of our success through testimonials from members and a portfolio showcasing our training sessions, events, and achievements.
+> The website should give users proof of our success through testimonials from members and showcase our training sessions, events, and achievements.
 
 > The website should make it easy for prospective members to get in touch.
 
@@ -224,8 +224,8 @@ To determine the best approach to this project, I began by identifying and under
 
 | Test                                                         | Outcome |
 |--------------------------------------------------------------|---------|
-| Home page, about, portfolio, contact us displays correctly on screens larger than 950px  | Pass    |
-| Home page, about, portfolio, contact us displays correctly on screens smaller than 950px | Pass    |
+| Home page, about, prices, contact us displays correctly on screens larger than 950px  | Pass    |
+| Home page, about, prices, contact us displays correctly on screens smaller than 950px | Pass    |
 
 ### User testing
 #### User testing challenge
